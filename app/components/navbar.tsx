@@ -5,6 +5,8 @@ import {
   QuestionMarkCircleIcon,
   Bars3Icon,
 } from '@heroicons/react/24/solid';
+import Button from './button';
+import Divider from './divider';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -14,8 +16,9 @@ export default function NavBar() {
   return (
     <header className=' bg-slate-800 sticky top-0'>
       <div className='flex h-[50px] justify-between items-center max-w-screen-2xl mx-auto px-3 2xl:px-0 relative bg-slate-800'>
-        <div className=''>
-          <h3 className='text-white text-xl'>DevCraft</h3>
+        <div className='flex items-center'>
+          <img src="/anvil.png" className='h-6 w-6 me-2' alt="" />
+          <h3 className='text-white text-xl inline font-bold'>Dev<span className='text-emerald-400'>Craft</span> </h3>
         </div>
         <button
           onClick={() => setOpen(!open)}
@@ -28,26 +31,33 @@ export default function NavBar() {
         <nav
           className={`text-white absolute lg:static top-0 lg:mt-0 -z-10 lg:z-0 left-0 right-0 duration-200 ease-in-out bg-slate-800 ${openCls}`}
         >
-          <ul className='flex flex-col pt-4 pb-8 lg:py-0 gap-4 lg:flex-row ms-8 lg:ms-0'>
-            <li className='text-xl lg:text-base '>
+          <ul className='flex flex-col pt-4 pb-8 lg:py-0 gap-4 lg:flex-row ms-8 lg:ms-0 lg:items-center lg:font-semibold'>
+            <li className='text-xl lg:text-sm  '>
               <a href='/courses'>
                 <AcademicCapIcon className='me-4 text-emerald-500 inline h-7 w-7 lg:hidden' />{' '}
                 courses
               </a>
             </li>
-            <li className='text-xl lg:text-base'>
+            <li className='text-xl lg:text-sm'>
               <a href='/courses'>
                 <ArchiveBoxIcon className='me-4 text-emerald-500 inline h-7 w-7 lg:hidden' />{' '}
                 resources
               </a>
             </li>
-            <li className='text-xl lg:text-base'>
+            <li className='text-xl lg:text-sm'>
               <a href='/courses'>
                 <QuestionMarkCircleIcon className='me-4 text-emerald-500 inline h-7 w-7 lg:hidden' />{' '}
                 about
               </a>
             </li>
-            <li className='flex gap-x-2'></li>
+            <Divider direction='horizontal' height='h-7' />
+            <li className=' '>
+              <div className=''>
+                <Button size='sm' variant='info'>
+                  <span>Get Started</span>
+                </Button>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
