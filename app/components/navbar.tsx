@@ -26,7 +26,7 @@ export default function NavBar() {
           <Bars3Icon className='text-emerald-500 h-8 w-8 ' />
         </button>
         <nav
-          className={`text-white absolute lg:static top-0 lg:mt-0 -z-10 left-0 right-0 duration-200 ease-in-out bg-slate-800 ${openCls}`}
+          className={`text-white absolute lg:static top-0 lg:mt-0 -z-10 lg:z-0 left-0 right-0 duration-200 ease-in-out bg-slate-800 ${openCls}`}
         >
           <ul className='flex flex-col pt-4 pb-8 lg:py-0 gap-4 lg:flex-row ms-8 lg:ms-0'>
             <li className='text-xl lg:text-base '>
