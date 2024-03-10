@@ -29,7 +29,7 @@ export function BreadCrump() {
         <div className='flex gap-x-2 items-center py-4 text-center'>
             {matches.map((match) => {
                 const name = GetRouteName(match.pathname);
-                return <BreadCrumpItem name={name}/>
+                return <BreadCrumpItem key={name + '_key'} name={name}/>
             })}
         </div>
     );
