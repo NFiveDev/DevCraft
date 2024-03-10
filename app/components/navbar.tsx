@@ -33,7 +33,7 @@ export default function NavBar() {
         >
           <ul className='flex flex-col pt-4 pb-8 lg:py-0 gap-4 lg:flex-row ms-8 lg:ms-0 lg:items-center lg:font-semibold'>
             <li className='text-xl lg:text-sm  '>
-              <a href='/courses'>
+              <a href='/course'>
                 <AcademicCapIcon className='me-4 text-emerald-500 inline h-7 w-7 lg:hidden' />{' '}
                 courses
               </a>

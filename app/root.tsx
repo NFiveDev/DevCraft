@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import { BreadCrump } from "./components/breadcrump";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
@@ -27,6 +28,7 @@ export default function App() {
 
         <main className="flex-auto ">
           <div className="block max-w-screen-2xl px-2 mx-auto ">
+            <BreadCrump />
             <Outlet />
             <ScrollRestoration />
             <Scripts />
