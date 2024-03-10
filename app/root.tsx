@@ -27,7 +27,7 @@ export default function App() {
         <NavBar />
 
         <main className="flex-auto ">
-          <div className="block max-w-screen-2xl px-2 mx-auto ">
+          <div className="block max-w-screen-2xl px-5  mx-auto ">
             <BreadCrump />
             <Outlet />
             <ScrollRestoration />
