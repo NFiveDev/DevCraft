@@ -15,7 +15,7 @@ export default function NavBar() {
 
   return (
     <header className=' bg-slate-800 sticky top-0'>
-      <div className='flex h-[50px] justify-between items-center max-w-screen-2xl mx-auto px-3 2xl:px-0 relative bg-slate-800'>
+      <div className='flex h-[50px] justify-between items-center max-w-screen-xl mx-auto px-3 2xl:px-0 relative bg-slate-800'>
         <div className='flex items-center'>
           <img src="/anvil.png" className='h-6 w-6 me-2' alt="" />
           <h3 className='text-white text-xl inline font-bold'>Dev<span className='text-emerald-400'>Craft</span> </h3>
