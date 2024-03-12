@@ -14,8 +14,8 @@ export function FilterLink(props: FilterLinkProps) {
 
     return (
         <Link to={{ pathname: props.path, search: props.query }}>
-            <div className={"border-2 text-sm font-semibold py-1 px-2 rounded-lg " + activeState}>
-                <span>{props.title}</span>
+            <div className={"border-2  font-medium py-1 px-2 rounded-lg " + activeState}>
+                <span className='text-sm'>{props.title}</span>
             </div>
         </Link>
     );

@@ -1,4 +1,5 @@
 import { Card } from '~/components/card';
+import { Dropdown } from '~/components/dropdown';
 import { FilterLink } from '~/components/link';
 
 export default function Course() {
@@ -17,10 +18,15 @@ export default function Course() {
             </section>
 
             <section className="mt-8">
-                <div className="flex flex-row gap-x-3">
-                    <FilterLink title="Topic" path="/course" query="?CourseType=topic" />
-                    <FilterLink title="Project" path="/course" query="?CourseType=project" />
+                <div className='flex justify-between items-center'>
+                    <div className="flex flex-row gap-x-3">
+                        <FilterLink title="Topic" path="/course" query="?CourseType=topic" />
+                        <FilterLink title="Project" path="/course" query="?CourseType=project" />
+                    </div>
+                    <Dropdown/>
                 </div>
+                    
+                
 
                 <div className="grid grid-cols-3 gap-4 mt-3">
                     <div className=" col-span-3 lg:col-span-1">
