@@ -20,12 +20,13 @@ export default function Course() {
                             build and maintain dynamic websites and applications.
                         </h4>
                     </div>
-                    <div className='pt-3'>
+                    <div className='pt-3 flex gap-3'>
                         <LinkButton size='lg' variant='primary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
+                        <LinkButton size='lg' variant='secondary' href='/about' outline>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
                     </div>
                 </div>
                 <img
-                    src="/images/course_hero2.jpg"
+                    src="/images/course_hero.jpg"
                     alt=""
                     className="object-fill rounded-lg w-[400px]"
                 />
