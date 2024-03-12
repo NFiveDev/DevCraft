@@ -22,7 +22,7 @@ export default function Course() {
                     </div>
                     <div className='pt-3 flex gap-3'>
                         <LinkButton size='lg' variant='primary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
-                        <LinkButton size='lg' variant='secondary' href='/about' outline>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
+                        <LinkButton size='lg' variant='secondary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
                     </div>
                 </div>
                 <img
