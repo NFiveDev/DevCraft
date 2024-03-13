@@ -1,6 +1,6 @@
 export function Card() {
     return (
-        <div className="p-5 h-64 shadow-lg rounded-lg bg-gray-50">
+        <div className="p-6 max-w-96 mx-2 shadow-lg rounded-lg bg-gray-50">
             <div className="flex flex-row  w-full items-center">
                 <h3 className="flex-1 text-2xl font-semibold">Python Beginner</h3>
                 <img className="h-12 w-12" src="/icons/course/python.svg" alt="" />

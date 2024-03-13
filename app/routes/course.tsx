@@ -20,9 +20,13 @@ export default function Course() {
                             build and maintain dynamic websites and applications.
                         </h4>
                     </div>
-                    <div className='pt-4 flex gap-3'>
-                        <LinkButton size='lg' variant='primary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
-                        <LinkButton size='lg' variant='secondary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
+                    <div className="pt-4 flex gap-3">
+                        <LinkButton size="lg" variant="primary" href="/about">
+                            Guide <ArrowRightCircleIcon className="ms-2 w-5 h-5" />
+                        </LinkButton>
+                        <LinkButton size="lg" variant="secondary" href="/about">
+                            Guide <ArrowRightCircleIcon className="ms-2 w-5 h-5" />
+                        </LinkButton>
                     </div>
                 </div>
                 <img
@@ -40,10 +44,17 @@ export default function Course() {
                     </div>
                     <Dropdown />
                 </div>
-
-                <div className="grid grid-cols-3 gap-4 mt-3">
-                    <div className=" col-span-3 lg:col-span-1">
-                        <Card />
+                <div className="flex w-full justify-center">
+                    <div className="grid grid-cols-3 gap-6 mt-3 ">
+                        <div className=" col-span-3 lg:col-span-1">
+                            <Card />
+                        </div>
+                        <div className=" col-span-3 lg:col-span-1">
+                            <Card />
+                        </div>
+                        <div className=" col-span-3 lg:col-span-1">
+                            <Card />
+                        </div>
                     </div>
                 </div>
             </section>
