@@ -7,26 +7,26 @@ import { ArrowRightCircleIcon } from '@heroicons/react/24/solid';
 export default function Course() {
     return (
         <>
-            <section className="flex gap-7">
+            <section className="flex flex-col lg:flex-row gap-7 pt-4">
                 <div className="flex flex-col">
                     <div>
-                        <h1 className=" text-5xl font-bold text-slate-900">
+                        <h1 className="text-3xl lg:text-5xl font-bold text-slate-900">
                             Explore the courses and choose one right for you!
                         </h1>
-                        <h4 className="text-slate-500 text-lg pt-4 pe-10">
+                        <h4 className="text-slate-500 text-base pt-4 pe-10">
                             The Web Development courses we offer are designed to help prepare you
                             for a career in front-end and back-end development, full-stack
                             engineering, and web design, providing you with comprehensive skills to
                             build and maintain dynamic websites and applications.
                         </h4>
                     </div>
-                    <div className='pt-3 flex gap-3'>
+                    <div className='pt-4 flex gap-3'>
                         <LinkButton size='lg' variant='primary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
                         <LinkButton size='lg' variant='secondary' href='/about'>Guide <ArrowRightCircleIcon className='ms-2 w-5 h-5'/></LinkButton>
                     </div>
                 </div>
                 <img
-                    src="/images/course_hero.jpg"
+                    src="/images/course_hero.svg"
                     alt=""
                     className="object-fill rounded-lg w-[400px]"
                 />
