@@ -22,10 +22,10 @@ export default function Course() {
                     </div>
                     <div className="pt-4 flex gap-3">
                         <LinkButton size="lg" variant="primary" href="/about">
-                            Guide <ArrowRightCircleIcon className="ms-2 w-5 h-5" />
+                            Guide <ArrowRightCircleIcon className="w-5 h-5" />
                         </LinkButton>
                         <LinkButton size="lg" variant="secondary" href="/about">
-                            Guide <ArrowRightCircleIcon className="ms-2 w-5 h-5" />
+                            Guide <ArrowRightCircleIcon className="w-5 h-5" />
                         </LinkButton>
                     </div>
                 </div>
@@ -44,14 +44,8 @@ export default function Course() {
                     </div>
                     <Dropdown />
                 </div>
-                <div className="flex w-full justify-center">
+                <div className="flex w-full justify-center pt-3">
                     <div className="grid grid-cols-3 gap-6 mt-3 ">
-                        <div className=" col-span-3 lg:col-span-1">
-                            <Card />
-                        </div>
-                        <div className=" col-span-3 lg:col-span-1">
-                            <Card />
-                        </div>
                         <div className=" col-span-3 lg:col-span-1">
                             <Card />
                         </div>

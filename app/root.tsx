@@ -27,7 +27,7 @@ export default function App() {
             <body className="font-ubuntu flex flex-col h-screen text-[16px]">
                 <NavBar />
 
-                <main className="flex-auto ">
+                <main className="flex-auto bg-slate-100 ">
                     <div className="block max-w-screen-xl px-5  mx-auto ">
                         <BreadCrump />
                         <Outlet />

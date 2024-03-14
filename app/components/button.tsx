@@ -34,7 +34,7 @@ export function Button(props: ButtonProps & React.ButtonHTMLAttributes<HTMLButto
         variant +
         ' ' +
         size +
-        ' rounded-md inline-flex flex items-center justify-center whitespace-nowrap font-medium';
+        ' rounded-md inline-flex flex gap-x-2 items-center justify-center whitespace-nowrap font-medium';
 
     return <button className={cls}>{props.children}</button>;
 }
