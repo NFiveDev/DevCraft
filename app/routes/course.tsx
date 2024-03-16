@@ -1,9 +1,8 @@
-import { LinkButton } from '~/components/button';
-import { Card } from '~/components/card';
+import { LinkButton, Button } from '~/components/button';
+import { Card, CardContent, CardFooter, CardHeader } from '~/components/card';
 import { Dropdown } from '~/components/dropdown';
 import { FilterLink } from '~/components/link';
-import { ArrowRightCircleIcon } from '@heroicons/react/24/solid';
-
+import { ArrowRightCircleIcon, ClockIcon, ChartBarIcon, ArrowRightStartOnRectangleIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 export default function Course() {
     return (
         <>
@@ -47,7 +46,52 @@ export default function Course() {
                 <div className="flex w-full justify-center pt-3">
                     <div className="grid grid-cols-3 gap-6 mt-3 ">
                         <div className=" col-span-3 lg:col-span-1">
-                            <Card />
+                            <Card>
+                                <CardHeader>
+                                    <h3 className="flex-1 text-2xl font-semibold">
+                                        Python Beginner
+                                    </h3>
+                                    <img
+                                        className="h-12 w-12"
+                                        src="/icons/course/python.svg"
+                                        alt=""
+                                    />
+                                </CardHeader>
+                                <CardContent>
+                                    <div className="flex gap-x-2 justify-center lg:justify-start ">
+                                        <div className="flex">
+                                            <ClockIcon className="w-4 text-sky-600" />
+                                            <span className="ps-1 text-slate-400 text-sm font-bold">
+                                                1:20:30
+                                            </span>
+                                        </div>
+                                        <div className="flex">
+                                            <ChartBarIcon className="w-4 text-sky-600" />
+                                            <span className="ps-1 text-slate-400 text-sm font-bold">
+                                                beginner
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="pt-2 text-center lg:text-start">
+                                        <p className=" text-base text-slate-500 line-clamp-4">
+                                            If you’re looking for a programming language that’s
+                                            flexible and easy to read, try learning Python. It’s one
+                                            of the most popular languages today, and programming in
+                                            Python is used for everything from web and software
+                                            development to data science and analytics to quality
+                                            assurance.
+                                        </p>
+                                    </div>
+                                </CardContent>
+                                <CardFooter>
+                                    <LinkButton variant="primary" size="sm" href="">
+                                        Begin <ArrowRightStartOnRectangleIcon className="w-4" />
+                                    </LinkButton>
+                                    <Button variant="secondary" size="sm">
+                                        Enroll <CheckCircleIcon className="w-4" />
+                                    </Button>
+                                </CardFooter>
+                            </Card>
                         </div>
                     </div>
                 </div>
