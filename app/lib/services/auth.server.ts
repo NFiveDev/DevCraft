@@ -11,9 +11,11 @@ authenticator.use(
         let email = form.get('email') as string;
         let password = form.get('password');
 
-        if(!validateEmail(email)) throw new Error("Invalid email")
-        
+        if (!validateEmail(email)) throw new Error('Invalid email');
+
         const user = await FindByEmail(email);
+
+        if (!user || user.email.length < 1) throw new Error('Could not find user');
 
         return '';
     }),
