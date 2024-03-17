@@ -1,8 +1,8 @@
 import { Authenticator } from 'remix-auth';
 import { sessionStorage } from './auth.session';
 import { FormStrategy } from 'remix-auth-form';
-import { FindByEmail } from '../services/user';
-import { validateEmail } from './validators';
+import { FindByEmail } from './user';
+import { validateEmail } from '../utility/validators';
 
 export let authenticator = new Authenticator<string>(sessionStorage);
 
