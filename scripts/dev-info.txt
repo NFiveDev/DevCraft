@@ -1,0 +1,3 @@
+pgadmin4 crypt key master password = "admin"
+localhost docker setup = run bash docker script
+seed data with seed.ts
